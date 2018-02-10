@@ -62,7 +62,7 @@ public class SpamThread extends Thread {
 				nodeManager.getUIM().logWrn("spamming thread paused remotely by ISF website");
 				while(command == 1)
 					try {
-						sleep(5000);
+						sleep(1000);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}

@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+
+  isf:
+    build: .
+    environment:
+      SYNC_CHECK_INTERVAL: '600'
+      THIRD_PARTY_NODE_LIST: 'true'
+      INTERVAL: '60'
+      TIME_FORMAT: 'HH:mm:ss'
+      THREADS_AMOUNT: '1'
+      THREADS_PRIORITY: '2'
+      NODE_LIST: ${NODE_LIST}
+      EMAIL: ${EMAIL}
+      PASSWORD: ${PASSWORD}
+
